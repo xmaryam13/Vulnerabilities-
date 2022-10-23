@@ -45,7 +45,7 @@ def login():
         }), 400
 
 @api.route("/logout", methods=["POST"])
-#create a funtion for the person/user to be able to log out
+#create a function for the person/user to be able to log out
 def logout():
     try:
         session["email"] = None
