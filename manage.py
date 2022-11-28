@@ -197,7 +197,7 @@ product_json = [
 	}
 ]
 
-#created a function that creates a new database for each profile user
+#created a function that recreates a database after removing the previous data
 def recreate_db():
 	db.drop_all()
 	db.create_all()
